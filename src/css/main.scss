@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 3em !important;
+  }
+  .subtitle {
+    font-size: 1em !important;
+    &-small {
+      font-size: 0.8em !important;
+    }
+  }
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.flex-container {
+  height: 100%;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 5em;
+}
+
+.subtitle {
+  color: #666666;
+  font-size: 1.6em;
+
+  &-small {
+    @extend .subtitle;
+    font-size: 1em;
+    opacity: 0.7;
+    padding-top: 15px;
+  }
+}
+
+.title, .subtitle {
+  text-align: center;
+
+  a {
+    color: #666666;
+    text-decoration: none;
+
+    u {
+      text-decoration: none;
+    }
+  }
+}
+
+.contacts {
+  padding: 15px;
+
+  ul {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: baseline;
+
+    li {
+      padding-top: 5px;
+      padding-left: 5px;
+      padding-right: 5px;
+
+      &.contact-important {
+        a {
+          font-size: 1.3em !important;
+          color: #E25A76;
+          border-bottom: 1px solid #E25A76;
+
+          &:visited {
+            u {
+              border-bottom: 1px solid #E25A76;
+            }
+          }
+
+          &:hover {
+            color: #E83156;
+          }
+        }
+      }
+
+      a {
+        color: #888888;
+        text-decoration: none;
+        border-bottom: 1px solid #4caf50;
+
+        &:visited {
+          u {
+            border-bottom: 1px solid #4caf50;
+          }
+        }
+
+        &:hover {
+          color: #4caf50;
+        }
+      }
+    }
+  }
+}
+
+a.link {
+  &-tj {
+    &:visited {
+      u {
+        border-bottom: 1px solid #E8A427;
+      }
+    }
+
+    &:hover {
+      color: #E8A427;
+    }
+
+    u {
+      border-bottom: 1px solid #E8A427;
+    }
+  }
+
+  &-vc {
+    &:visited {
+      u {
+        border-bottom: 1px solid #E25A76;
+      }
+    }
+
+    &:hover {
+      color: #E25A76;
+    }
+
+    u {
+      border-bottom: 1px solid #E25A76;
+    }
+  }
+
+  &-sovcombank {
+    &:visited {
+      u {
+        border-bottom: 1px solid #00091F;
+      }
+    }
+
+    &:hover {
+      color: #00091F;
+    }
+
+    u {
+      border-bottom: 1px solid #00091F;
+    }
+  }
+
+  &-dtf {
+    &:visited {
+      u {
+        border-bottom: 1px solid #5bbad5;
+      }
+    }
+
+    &:hover {
+      color: #5bbad5;
+    }
+
+    u {
+      border-bottom: 1px solid #5bbad5;
+    }
+  }
+
+  &-coub {
+    &:visited {
+      u {
+        border-bottom: 1px solid #0332FF;
+      }
+    }
+
+    &:hover {
+      color: #0332FF;
+    }
+
+    u {
+      border-bottom: 1px solid #0332FF;
+    }
+  }
+}
